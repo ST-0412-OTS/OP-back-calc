@@ -4,7 +4,7 @@ import numpy as np
 import io
 import pandas as pd
 
-st.title("Create Compressor Curve with less manual work")
+st.title("Create Compressor Curve")
 
 st.markdown("""
     <style>
