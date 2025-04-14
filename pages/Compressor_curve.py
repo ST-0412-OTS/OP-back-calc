@@ -31,7 +31,7 @@ with st.container():
         Y_max = st.number_input("Y-max", min_value=0.01, step=1.0, format="%.2f",key = "Y_max")
     with col3:
         st.markdown("**Points no**")  # Label for Value 3
-        points_no = st.number_input("Points no", min_value=1, step=1.0, format="%.0f", key = "Points no")
+        points_no = st.number_input("Points no", min_value=1.0, step=1.0, format="%.0f", key = "Points no")
 
     # Second row with three columns
     col4, col5, col6 = st.columns(3)
