@@ -25,22 +25,22 @@ with st.container():
     col1, col2, col3 = st.columns(3)
     with col1:
         st.markdown("**X-max**")  # Label for Value 1
-        X_max = st.number_input("X-max", min_value=1.0, step=1.0, format="%.2f", key = "X_max")
+        X_max = st.number_input("X-max", min_value=0.01, step=1.0, format="%.2f", key = "X_max")
     with col2:
         st.markdown("**Y-max**")  # Label for Value 2
-        Y_max = st.number_input("Y-max", min_value=1.0, step=1.0, format="%.2f",key = "Y_max")
+        Y_max = st.number_input("Y-max", min_value=0.01, step=1.0, format="%.2f",key = "Y_max")
     with col3:
         st.markdown("**Points no**")  # Label for Value 3
-        points_no = st.number_input("Points no", min_value=1.0, step=1.0, format="%.0f", key = "Points no")
+        points_no = st.number_input("Points no", min_value=1, step=1.0, format="%.0f", key = "Points no")
 
     # Second row with three columns
     col4, col5, col6 = st.columns(3)
     with col4:
         st.markdown("**Operating X**")  # Label for Value 4
-        opr_x = st.number_input("Operating X", min_value=1.0, step=1.0, format="%.2f", key = "opr_x")
+        opr_x = st.number_input("Operating X", min_value=0.01, step=1.0, format="%.2f", key = "opr_x")
     with col5:
         st.markdown("**Operating Y**")  # Label for Value 5
-        opr_y = st.number_input("Operating Y", min_value=1.0, step=1.0, format="%.2f", key = "opr_y")
+        opr_y = st.number_input("Operating Y", min_value=0.01, step=1.0, format="%.2f", key = "opr_y")
 
 def cal_n():
     return np.log(1 - opr_y / Y_max) / np.log(opr_x / X_max)
