@@ -87,3 +87,6 @@ fig.update_layout(
 
 # Display the plot
 st.plotly_chart(fig)
+
+st.dataframe(df)
+
